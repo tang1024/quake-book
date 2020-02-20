@@ -26,7 +26,7 @@ pdf:
 	-o out/black-book.pdf \
 	--pdf-engine=lualatex \
 	--variable mainfont="DejaVu Serif" \
-	--variable geometry:"top=2cm, bottom=2cm, left=1cm, right=1cm" \
+	--variable geometry:"top=2cm, bottom=2cm, left=1.5cm, right=1.5cm" \
 	$(FILES)
 
 latex:
