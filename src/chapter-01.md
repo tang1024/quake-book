@@ -261,13 +261,14 @@ implementation is indeed faster than any of the C versions, as shown in
 Table 1.1, but it's less than 10 percent faster, and it's still
 unacceptably slow.
 
-| Listing                               | Borland  | Microsoft | Borland | Microsoft | Assembly | Optimization Ratio |
-|---------------------------------------|----------|-----------|---------|-----------|----------|--------------------|
-|                                       | (no opt) | (no opt)  | (opt)   | (opt)     |          |                    |
-| 1                                     | 166.9    | 166.8     | 167.0   | 165.8     | 155.1    | 1.08               |
-| 4                                     | 13.5     | 13.6      | 13.5    | 13.5      | ...      | 1.01               |
-| 5                                     | 4.7      | 5.5       | 3.8     | 3.4       | 2.7      | 2.04               |
-| Ratio best designed to worst designed | 35.51    | 30.33     | 43.95   | 48.76     | 57.44    |                    |
+| Listing                | Borland  | Microsoft | Borland | Microsoft | Assembly | Optimization Ratio |
+|------------------------|----------|-----------|---------|-----------|----------|--------------------|
+|                        | (no opt) | (no opt)  | (opt)   | (opt)     |          |                    |
+| 1                      | 166.9    | 166.8     | 167.0   | 165.8     | 155.1    | 1.08               |
+| 4                      | 13.5     | 13.6      | 13.5    | 13.5      | ...      | 1.01               |
+| 5                      | 4.7      | 5.5       | 3.8     | 3.4       | 2.7      | 2.04               |
+| Ratio best designed to | 35.51    | 30.33     | 43.95   | 48.76     | 57.44    |                    |
+| worst designed         |          |           |         |           |          |                    |
 
 Table: Table 1.1 Execution Times for WordPerfect Checksum.
 
